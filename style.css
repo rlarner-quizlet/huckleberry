@@ -1,12 +1,63 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: hsl(0deg, 0%, 60%);
 }
 
 /* Add styles here! */
+header {
+  padding: 64px 0 0;
+  border-bottom: 4px solid hsl(0deg, 0%, 40%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main {
+  margin: 0;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  margin-top: 64px;
+  padding: 0 16px 8px;
+}
+
+.max-width-wrapper {
+  width: 100%;
+}
+
+.intro-chunk {
+  padding: 0 24px;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 4px solid hsl(45deg, 100%, 40%);
+  display: inline-block;
+  margin: 8px 32px 0 -24px;
+  padding: 8px 24px 8px 24px;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    padding: 64px 128px 24px;
+  }
+
+  main {
+    padding: 0 144px;
+  }
+}
